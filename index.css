@@ -1,12 +1,18 @@
-body{
+body {
   background-color: rgb(8, 75, 75);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 #main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
   background-color: aquamarine;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 #github-container {
@@ -14,12 +20,14 @@ body{
   justify-content: space-between;
   margin-top: 20px;
   background-color: rgb(41, 65, 65);
+  padding: 20px;
+  border-radius: 10px;
 }
-
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #user-list li,
@@ -28,6 +36,8 @@ ul {
   border: 1px solid #ccc;
   margin-bottom: 10px;
   background-color: rgb(207, 161, 104);
+  border-radius: 5px;
+  color: #333;
 }
 
 #user-list li {
@@ -41,6 +51,7 @@ ul {
 
 #repos-list h3 {
   margin-top: 0;
+  color: #fff;
 }
 
 #github-form {
@@ -52,6 +63,9 @@ ul {
 #github-form input[type="text"] {
   padding: 5px;
   width: 200px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
 }
 
 #github-form input[type="submit"] {
@@ -59,6 +73,7 @@ ul {
   background-color: #337ab7;
   color: #fff;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -73,7 +88,7 @@ ul {
 }
 
 #repos-list a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
