@@ -73,3 +73,20 @@ function searchUsers(searchQuery) {
     // ...
   }
   
+  function fetchUserRepositories(username) {
+    const url = `https://api.github.com/users/${username}/repos`;
+  
+    // Make a GET request to the User Repos Endpoint
+    fetch(url, {
+      headers: {
+        Accept: 'application/vnd.github.v3+json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // Pass the repository data to a function to display the results
+        displayRepositories(data);
+      })
+      .catch((error) => console.log(error));
+  }
+  
