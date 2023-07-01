@@ -90,3 +90,27 @@ function searchUsers(searchQuery) {
       .catch((error) => console.log(error));
   }
   
+  function displayRepositories(repositories) {
+    const container = document.querySelector('#results-container');
+    container.innerHTML = '';
+  
+    repositories.forEach((repo) => {
+      // Create elements to display repository information
+      const repoCard = document.createElement('div');
+      repoCard.classList.add('repo-card');
+  
+      const repoName = document.createElement('h3');
+      repoName.textContent = repo.name;
+  
+      const repoDescription = document.createElement('p');
+      repoDescription.textContent = repo.description || 'No description available.';
+  
+      // Append elements to the repository card
+      repoCard.appendChild(repoName);
+      repoCard.appendChild(repoDescription);
+  
+      // Append the repository card to the container
+      container.appendChild(repoCard);
+    });
+  }
+  
