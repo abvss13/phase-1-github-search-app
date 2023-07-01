@@ -39,3 +39,41 @@ ul {
 #repos-list h3 {
   margin-top: 0;
 }
+
+#github-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#github-form input[type="text"] {
+  padding: 5px;
+  width: 200px;
+}
+
+#github-form input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#user-list li:hover,
+#repos-list li:hover {
+  background-color: #f5f5f5;
+}
+
+#user-list a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+#repos-list a {
+  color: #333;
+  text-decoration: none;
+}
+
+#repos-list ul {
+  padding-left: 20px;
+}
